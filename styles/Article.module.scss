@@ -1,0 +1,24 @@
+.wrapper {
+    width: 300px;
+    margin-right: 120px;
+    margin-bottom: 50px;
+    padding: 16px;
+    border: 1px solid transparent;
+
+    &:hover {
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+}
+
+.title {
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.body {
+    margin-bottom: 16px;
+}

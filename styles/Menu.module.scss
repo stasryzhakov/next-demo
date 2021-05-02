@@ -1,0 +1,21 @@
+.menu {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.item {
+    & + & {
+        margin-left: 24px;
+    }
+}
