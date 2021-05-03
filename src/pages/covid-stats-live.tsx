@@ -44,7 +44,6 @@ export default function CovidStats({ summary }: { summary: SummaryType }) {
 }
 
 export const getServerSideProps: GetServerSideProps = async context => {
-    console.log('sim');
     const res = await fetch('https://api.covid19api.com/summary');
     const summary = await res.json();
 
