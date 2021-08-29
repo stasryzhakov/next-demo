@@ -9,8 +9,8 @@ type MarkdownFile = {
 export default function File({ mds }: { mds: MarkdownFile[] }) {
     return (
         <ul>
-            {mds.map((md: MarkdownFile) => (
-                <li>{md.content}</li>
+            {mds.map((md: MarkdownFile, index) => (
+                <li key={index}>{md.content}</li>
             ))}
         </ul>
     );
