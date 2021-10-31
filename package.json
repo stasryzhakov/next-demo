@@ -9,7 +9,10 @@
     "out": "next build"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
     "@types/pg": "^8.6.1",
+    "antd": "^4.16.13",
+    "axios": "^0.24.0",
     "next": "^12.0.0",
     "prettier": "^2.4.1",
     "react": "17.0.2",

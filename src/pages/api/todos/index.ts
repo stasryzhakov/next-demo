@@ -3,12 +3,11 @@ import { pool } from '../../../db/db';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
     const { todo: todoBody, done } = req.body;
-    console.log(todoBody, done);
 
     if (req.method === 'GET') {
         try {
             const todos = await pool.query('SELECT * FROM todos');
-            res.json(todos.rows);
+            return res.status(200).json(todos.rows);
         } catch (e) {
             console.log(e);
         }

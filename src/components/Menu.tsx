@@ -28,6 +28,10 @@ export const Menu = () => {
                 <li className={styles.item}>
                     <Link href="/file">File</Link>
                 </li>
+
+                <li className={styles.item}>
+                    <Link href="/todos">Todos</Link>
+                </li>
             </ul>
         </nav>
     );
